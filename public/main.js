@@ -21,12 +21,14 @@ function submitHandler(e) {
   let title = document.querySelector(`#book-title`);
   let author = document.querySelector(`#book-author`);
   let rating = document.querySelector(`#book-rating`);
+  let quote = document.querySelector(`#book-quote`);
   let image = document.querySelector(`#book-image`);
 
   let bodyObject = {
     title: title.value,
     author: author.value,
     rating: rating.value,
+    quote: quote.value,
     image: image.value,
   };
 
@@ -35,6 +37,7 @@ function submitHandler(e) {
   title.value = "";
   author.value = "";
   rating.value = "";
+  quote.value = "";
   image.value = "";
 }
 
@@ -45,7 +48,8 @@ function createBookCard(book) {
   bookCard.innerHTML = `<img alt='book cover image' src=${book.image} class="book-cover-image"/>
     <p class="title">${book.title}</p>
     <p class="author">${book.author}</p>
-    <p class="rating">${book.rating}</p>
+    <p class="rating">Rating: ${book.rating}</p>
+    <p class="quote">"${book.quote}"</p>
     <button onclick="deleteBook(${book.id})" id="delete-button">delete</button>
     `;
 

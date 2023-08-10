@@ -4,6 +4,23 @@
     "title": "The Great Gatsby",
     "author": "F. Scott Fitzgerald",
     "rating": 8,
+    "quote": "I’ve been drunk for about a week now, and I thought it might sober me up to sit in a library.",
     "image": "https://m.media-amazon.com/images/I/71Qh5So-YZL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 2,
+    "title": "1944",
+    "author": "George Orwell",
+    "rating": 6,
+    "quote": "Who controls the past controls the future. Who controls the present controls the past.",
+    "image": "https://m.media-amazon.com/images/I/41gH8Q32oFL.jpg"
+  },
+  {
+    "id": 3,
+    "title": "The Starless Sea",
+    "author": "Erin Morgenstern",
+    "rating": 9,
+    "quote": "Occasionally, Fate pulls itself together again and Time is always waiting.",
+    "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1593185608l/48721348.jpg"
   }
 ]
