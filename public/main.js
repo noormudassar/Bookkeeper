@@ -46,7 +46,7 @@ function createBookCard(book) {
     <p class="title">${book.title}</p>
     <p class="author">${book.author}</p>
     <p class="rating">${book.rating}</p>
-    <button onclick="deleteBook(${book.id})">delete</button>
+    <button onclick="deleteBook(${book.id})" id="delete-button">delete</button>
     `;
 
   booksContainer.appendChild(bookCard);

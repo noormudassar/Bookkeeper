@@ -14,7 +14,7 @@ header {
   justify-content: center;
   align-items: center;
   color: darkslategray;
-  font-family: 'Bricolage Grotesque', sans-serif;;
+  font-family: "Bricolage Grotesque", sans-serif;
 }
 
 main {
@@ -22,7 +22,7 @@ main {
   justify-content: center;
 }
 
-form {
+#book-form {
   width: 350px;
   height: 350px;
   background-color: darkslategray;
@@ -34,7 +34,15 @@ form {
   margin: 30px;
 }
 
-button {
+#add-button {
+  background-color: #232323;
+  width: 75px;
+  height: 25px;
+  color: turquoise;
+  border: none;
+  margin: 5px;
+}
+#delete-button {
   background-color: #232323;
   width: 75px;
   height: 25px;
