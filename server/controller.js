@@ -42,4 +42,17 @@ module.exports = {
       res.sendStatus(400);
     }
   },
+  getQuotes: (req, res) => {
+    const quotes = [
+      "A beautiful, smart, and loving person will be coming into your life.",
+      "A lifetime of happiness lies ahead of you.",
+      "A smooth long journey! Great expectations.",
+      "An acquaintance of the past will affect you in the near future.",
+      "The harder you work, the luckier you get",
+    ];
+    let randomIndex = Math.floor(Math.random() * quotes.length);
+    let randomQuotes = quotes[randomIndex];
+
+    res.status(200).send(randomQuotes);
+  },
 };

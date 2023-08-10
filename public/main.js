@@ -1,5 +1,6 @@
 const booksContainer = document.querySelector("#books-container");
 const form = document.querySelector("form");
+const quoteButton = document.getElementById("fortuneButton");
 
 const baseURL = `http://localhost:5050/api/books`;
 
@@ -20,6 +21,20 @@ const updateBook = (id, type) =>
     .put(`${baseURL}/${id}`, { type })
     .then(booksCallback)
     .catch(errorCallback);
+
+const getQuotes = () => {
+  axios
+    .get("http://localhost:5050/api/quotes/")
+    .then((res) => {
+      const data = res.data;
+      alert(data);
+      console.log(data);
+    })
+    .catch((e) => {
+      console.log(e);
+      alert("Error!");
+    });
+};
 
 function submitHandler(e) {
   e.preventDefault();
@@ -74,5 +89,6 @@ function displayBooks(array) {
 }
 
 form.addEventListener("submit", submitHandler);
+quoteButton.addEventListener("click", getQuotes);
 
 getAllBooks();
