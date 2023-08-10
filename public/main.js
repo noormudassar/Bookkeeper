@@ -1,7 +1,6 @@
 const booksContainer = document.querySelector("#books-container");
 const quotesContainer = document.querySelector("#quotes-container");
 const form = document.querySelector("form");
-// const quoteButton = document.querySelector("#quotes-button");
 const quoteButton = document.querySelector("#quotes-popover");
 
 const baseURL = `http://localhost:5050/api/books`;
@@ -78,6 +77,7 @@ function createBookCard(book) {
     </div>
     <p class="quote">"${book.quote}"</p>
     <button onclick="deleteBook(${book.id})" id="delete-button">delete</button>
+    <button type="button" class="btn btn-danger"><span class="bi bi-heart red-color" id="like-button"></span></button>
     `;
 
   booksContainer.appendChild(bookCard);

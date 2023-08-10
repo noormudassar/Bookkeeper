@@ -6,7 +6,7 @@ const quotes = [
   "The harder you work, the luckier you get",
 ];
 const books = require(`./db.json`);
-let bookId = 4;
+let bookId = 5;
 
 module.exports = {
   getBooks: (req, res) => res.status(200).send(books),
@@ -27,6 +27,7 @@ module.exports = {
     books.push(newBook);
     res.status(200).send(books);
     bookId++;
+    console.log(newBook);
   },
   updateBook: (req, res) => {
     let { id } = req.params;

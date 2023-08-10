@@ -22,5 +22,21 @@
     "rating": 9,
     "quote": "Occasionally, Fate pulls itself together again and Time is always waiting.",
     "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1593185608l/48721348.jpg"
+  },
+  {
+    "id": 4,
+    "title": "The Outsider: A Novel",
+    "author": "Stephen King",
+    "rating": 7,
+    "quote": "If you can’t let go of the past, the mistakes you’ve made will eat you alive.",
+    "image": "https://m.media-amazon.com/images/I/81brH91wqvL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Happy Place",
+    "author": "Emily Henry",
+    "rating": 10,
+    "quote": "In every universe, it's you for me. Even if it's not me for you.",
+    "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1660145160l/61718053.jpg"
   }
 ]
