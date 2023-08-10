@@ -72,8 +72,32 @@
       <!-- <h5 class="card-header" style="align-items: center;">Welcome to Bookkeeper</h5> -->
       <div class="card-body">
         <h5 class="card-title">Welcome to Bookkeeper</h5>
-        <p class="card-text" style="height: 25rem;">Your source for all book keeping content. Add all your read books, add quotes and ratings and covers to keep a visual diary of all your read books.</p>
-        <a href="./quotes.html" class="btn btn-primary">Get a book quote for your next read!</a>
+        <p class="card-text" style="height: 23rem;">Your source for all book keeping content. Add all your read books, add quotes and ratings and covers to keep a visual diary of all your read books.</p>
+        <!-- a href="./quotes.html" -->
+        <!-- <a class="btn btn-primary" id="quotes-button">Get a book quote for your next read!</a> -->
+        <!-- <section id="quotes-container"></section> -->
+        <div class="popover-container">
+          <h3>Find Your Next Great Read</h3>
+          <!-- <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a> -->
+          <button type="button" class="btn btn-secondary" id="quotes-popover" data-container="body" data-toggle="popover" data-placement="top" data-content="The Girl with the Dragon Tattoo by Stieg Larsson | Quote: Everyone has secrets. It's just a matter of finding out what they are.">
+            Mystery Books
+          </button>
+          <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+            Adventure Books
+          </button>
+          <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+            Comedy Books
+          </button>
+          <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+            Thriller Books
+          </button>
+          <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+            Romance Books
+          </button>
+          <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+            Romance Books
+          </button>
+        </div>
       </div>
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -93,5 +117,10 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();   
+      });
+      </script>
   </body>
 </html>

@@ -1,3 +1,10 @@
+const quotes = [
+  "A beautiful, smart, and loving person will be coming into your life.",
+  "A lifetime of happiness lies ahead of you.",
+  "A smooth long journey! Great expectations.",
+  "An acquaintance of the past will affect you in the near future.",
+  "The harder you work, the luckier you get",
+];
 const books = require(`./db.json`);
 let bookId = 4;
 
@@ -24,12 +31,12 @@ module.exports = {
   updateBook: (req, res) => {
     let { id } = req.params;
     let { type } = req.body;
-    let index = books.findIndex((elem) => +elem.id === +id);
+    let index = books.findIndex((element) => +element.id === +id);
 
-    if ((books[index].rating = 10 && type === "plus")) {
+    if (books[index].rating === 10 && type === "plus") {
       books[index].rating = 10;
       res.status(200).send(books);
-    } else if ((books[index].rating = 1 && type === "minus")) {
+    } else if (books[index].rating === 1 && type === "minus") {
       books[index].rating = 1;
       res.status(200).send(books);
     } else if (type === "plus") {
@@ -43,13 +50,6 @@ module.exports = {
     }
   },
   getQuotes: (req, res) => {
-    const quotes = [
-      "A beautiful, smart, and loving person will be coming into your life.",
-      "A lifetime of happiness lies ahead of you.",
-      "A smooth long journey! Great expectations.",
-      "An acquaintance of the past will affect you in the near future.",
-      "The harder you work, the luckier you get",
-    ];
     let randomIndex = Math.floor(Math.random() * quotes.length);
     let randomQuotes = quotes[randomIndex];
 

@@ -1,6 +1,8 @@
 const booksContainer = document.querySelector("#books-container");
+const quotesContainer = document.querySelector("#quotes-container");
 const form = document.querySelector("form");
-const quoteButton = document.getElementById("fortuneButton");
+// const quoteButton = document.querySelector("#quotes-button");
+const quoteButton = document.querySelector("#quotes-popover");
 
 const baseURL = `http://localhost:5050/api/books`;
 
@@ -27,7 +29,7 @@ const getQuotes = () => {
     .get("http://localhost:5050/api/quotes/")
     .then((res) => {
       const data = res.data;
-      alert(data);
+      //   alert(data);
       console.log(data);
     })
     .catch((e) => {
@@ -89,6 +91,5 @@ function displayBooks(array) {
 }
 
 form.addEventListener("submit", submitHandler);
-quoteButton.addEventListener("click", getQuotes);
 
 getAllBooks();
