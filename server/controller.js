@@ -21,4 +21,19 @@ module.exports = {
     res.status(200).send(books);
     bookId++;
   },
+  updateBook: (req, res) => {
+    let { id } = req.params;
+    let { type } = req.body;
+    let index = books.findIndex((elem) => +elem.id === +id);
+
+    if (type === "plus") {
+      books[index].rating += 1;
+      res.status(200).send(books);
+    } else if (type === "minus") {
+      books[index].rating -= 1;
+      res.status(200).send(books);
+    } else {
+      res.sendStatus(400);
+    }
+  },
 };

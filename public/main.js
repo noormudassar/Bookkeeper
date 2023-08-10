@@ -15,6 +15,12 @@ const createBook = (body) =>
 const deleteBook = (id) =>
   axios.delete(`${baseURL}/${id}`).then(booksCallback).catch(errorCallback);
 
+const updateBook = (id, type) =>
+  axios
+    .put(`${baseURL}/${id}`, { type })
+    .then(booksCallback)
+    .catch(errorCallback);
+
 function submitHandler(e) {
   e.preventDefault();
 
@@ -48,7 +54,11 @@ function createBookCard(book) {
   bookCard.innerHTML = `<img alt='book cover image' src=${book.image} class="book-cover-image"/>
     <p class="title">${book.title}</p>
     <p class="author">${book.author}</p>
+    <div class="btns-container">
+    <button onclick="updateBook(${book.id}, 'minus')">-</button>
     <p class="rating">Rating: ${book.rating}</p>
+    <button onclick="updateBook(${book.id}, 'plus')">+</button>
+    </div>
     <p class="quote">"${book.quote}"</p>
     <button onclick="deleteBook(${book.id})" id="delete-button">delete</button>
     `;
