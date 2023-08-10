@@ -1,5 +1,5 @@
-const booksContainer = document.querySelector(`#books-container`);
-const form = document.querySelector(`form`);
+const booksContainer = document.querySelector("#books-container");
+const form = document.querySelector("form");
 
 const baseURL = `http://localhost:5050/api/books`;
 
@@ -9,8 +9,8 @@ const errorCallback = (error) => console.log(error);
 const getAllBooks = () =>
   axios.get(baseURL).then(booksCallback).catch(errorCallback);
 
-// const createBook = (body) =>
-//   axios.post(baseURL, body).then(booksCallback).catch(errorCallback);
+const createBook = (body) =>
+  axios.post(baseURL, body).then(booksCallback).catch(errorCallback);
 
 const deleteBook = (id) =>
   axios.delete(`${baseURL}/${id}`).then(booksCallback).catch(errorCallback);
@@ -45,7 +45,8 @@ function createBookCard(book) {
   bookCard.innerHTML = `<img alt='book cover image' src=${book.image} class="book-cover-image"/>
     <p class="title">${book.title}</p>
     <p class="author">${book.author}</p>
-    <button onclick="deleteHouse(${book.id})">delete</button>
+    <p class="rating">${book.rating}</p>
+    <button onclick="deleteBook(${book.id})">delete</button>
     `;
 
   booksContainer.appendChild(bookCard);

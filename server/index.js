@@ -14,6 +14,6 @@ const { getBooks, deleteBook, createBook } = require(`./controller`);
 
 app.get(`/api/books`, getBooks);
 app.delete(`/api/books/:id`, deleteBook);
-// app.post(`/api/books`, createBook);
+app.post(`/api/books`, createBook);
 
 app.listen(5050, () => console.log(`server running on 5050`));
