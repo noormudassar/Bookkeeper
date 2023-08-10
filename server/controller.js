@@ -26,7 +26,13 @@ module.exports = {
     let { type } = req.body;
     let index = books.findIndex((elem) => +elem.id === +id);
 
-    if (type === "plus") {
+    if ((books[index].rating = 10 && type === "plus")) {
+      books[index].rating = 10;
+      res.status(200).send(books);
+    } else if ((books[index].rating = 1 && type === "minus")) {
+      books[index].rating = 1;
+      res.status(200).send(books);
+    } else if (type === "plus") {
       books[index].rating += 1;
       res.status(200).send(books);
     } else if (type === "minus") {
