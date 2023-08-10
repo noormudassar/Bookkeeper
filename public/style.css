@@ -6,6 +6,7 @@
 
 body {
   background-color: snow;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
@@ -20,12 +21,27 @@ header {
 main {
   display: flex;
   justify-content: center;
+  margin-left: 10%;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #welcome-message {
+  display: flex;
+} */
+
+#home-page {
+  height: 200%;
 }
 
 #book-form {
   width: 350px;
-  height: 350px;
-  background-color: darkslategray;
+  height: 450px;
+  background-color: #52796f;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -35,10 +51,10 @@ main {
 }
 
 #add-button {
-  background-color: #232323;
+  background-color: #cad2c5;
   width: 75px;
-  height: 25px;
-  color: turquoise;
+  height: 35px;
+  color: black;
   border: none;
   margin: 5px;
 }
@@ -86,7 +102,7 @@ input[type="text"] {
 }
 
 .book-card {
-  background-color: turquoise;
+  background-color: #84a98c;
   width: 300px;
   margin: 20px;
   display: flex;
