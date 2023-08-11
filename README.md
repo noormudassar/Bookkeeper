@@ -1,5 +1,3 @@
-# Bookkeeper
-
 <h1 align="center"> Bookkeeper </h1>
 
 <hr/>
