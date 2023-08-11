@@ -30,13 +30,5 @@
     "rating": 7,
     "quote": "If you can’t let go of the past, the mistakes you’ve made will eat you alive.",
     "image": "https://m.media-amazon.com/images/I/81brH91wqvL._AC_UF1000,1000_QL80_.jpg"
-  },
-  {
-    "id": 5,
-    "title": "Alice's Adventures in Wonderland",
-    "author": "Lewis Carroll",
-    "rating": 10,
-    "quote": "Who in the world am I?' Ah, that's the great puzzle!",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHmZnSQokOU-WcMOC8n_WNLFAOZOAeU-AaLd7AAqgUVhunx0ki4aFfP9GSBwPh__RxOMU&usqp=CAU"
   }
 ]

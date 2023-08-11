@@ -1,5 +1,5 @@
 const books = require("./db.json");
-let bookId = 6;
+let bookId = 5;
 
 module.exports = {
   getBooks: (req, res) => res.status(200).send(books),
