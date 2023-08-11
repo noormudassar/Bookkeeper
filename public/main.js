@@ -1,7 +1,6 @@
 const booksContainer = document.querySelector("#books-container");
-const quotesContainer = document.querySelector("#quotes-container");
-const form = document.querySelector("form");
-const quoteButton = document.querySelector("#quotes-popover");
+// const form = document.querySelector("form");
+const form = document.querySelector("#book-form");
 
 const baseURL = `http://localhost:5050/api/books`;
 
@@ -22,20 +21,6 @@ const updateBook = (id, type) =>
     .put(`${baseURL}/${id}`, { type })
     .then(booksCallback)
     .catch(errorCallback);
-
-const getQuotes = () => {
-  axios
-    .get("http://localhost:5050/api/quotes/")
-    .then((res) => {
-      const data = res.data;
-      //   alert(data);
-      console.log(data);
-    })
-    .catch((e) => {
-      console.log(e);
-      alert("Error!");
-    });
-};
 
 function submitHandler(e) {
   e.preventDefault();
@@ -77,8 +62,8 @@ function createBookCard(book) {
     </div>
     <p class="quote">"${book.quote}"</p>
     <button onclick="deleteBook(${book.id})" id="delete-button">delete</button>
-    <button type="button" class="btn btn-danger"><span class="bi bi-heart red-color" id="like-button"></span></button>
     `;
+  // <button type="button" class="btn btn-danger"><span class="bi bi-heart red-color" id="like-button"></span></button>
 
   booksContainer.appendChild(bookCard);
 }
