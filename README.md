@@ -6,3 +6,7 @@ Welcome to Bookkeeper! Your source for all book keeping content. Use our books l
 
 <h2 align="center">Take a look at the books page</h2>
 <img src='Books Page.png'  />
+
+<h2 align="center">Wireframe vs Final Product</h2>
+<img src='Wireframe - Homepage.png'  />
+<img src='Website - Homepage.png'  />
