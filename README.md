@@ -1,4 +1,5 @@
 # Bookkeeper
+
 <h1 align="center"> Bookkeeper </h1>
 
 <hr/>
@@ -6,4 +7,4 @@ Welcome to Bookkeeper! Your source for all book keeping content. Use our books l
 <hr/>
 
 <h2 align="center">Take a look at the books page</h2>
-<img src='public/Wireframe-sample-PNYC.png' alt='PocketNYC WireFrame' />
+<img src='Books Page.png'  />
