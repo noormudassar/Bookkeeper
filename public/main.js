@@ -61,9 +61,9 @@ function createBookCard(book) {
     <button onclick="updateBook(${book.id}, 'plus')">+</button>
     </div>
     <p class="quote">"${book.quote}"</p>
+    <button type="button" class="btn btn-danger"><span class="bi bi-heart red-color" id="like-button"></span></button>
     <button onclick="deleteBook(${book.id})" id="delete-button">delete</button>
     `;
-  // <button type="button" class="btn btn-danger"><span class="bi bi-heart red-color" id="like-button"></span></button>
 
   booksContainer.appendChild(bookCard);
 }
