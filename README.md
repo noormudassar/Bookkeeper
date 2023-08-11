@@ -5,8 +5,12 @@ Welcome to Bookkeeper! Your source for all book keeping content. Use our books l
 <hr/>
 
 <h2 align="center">Take a look at the books page</h2>
-<img src='Books Page.png'  />
+<img src='Book Page.png'  />
 
 <h2 align="center">Wireframe vs Final Product</h2>
 <img src='Wireframe - Homepage.png'  />
 <img src='Website - Homepage.png'  />
+My basic wireframe helped lay the groundwork for our overall design. I utilized HTML, CSS, Javascript and Bootstrap, to develop an app that provided all the functionality outlined in the original wireframe.
+<hr/>
+
+Creator: [Noor Mudassar](https://www.linkedin.com/in/noormudassar/)
